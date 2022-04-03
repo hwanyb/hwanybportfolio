@@ -26,11 +26,11 @@ export default {
         }
     },
     methods: {
-        searchMovies() {
-            console.log('Searched!')
-            axios.get(`http://www.omdbapi.com/?apikey=cbed7158&s=${this.title}`).then(res => {
-                console.log(res)
-            })
+        async searchMovies() {
+            this.loading = true
+            const res = await axios.get(`http://www.omdbapi.com/?apikey=cbed7158&s=${this.title}`)
+            console.log(res.data.Search)
+            this.loading = false
         }
     }
 }
