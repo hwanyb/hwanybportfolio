@@ -7,9 +7,18 @@
                 lg="3"
                 md="4"
                 sm="6">
-                <div>{{ movie.Title}}</div>
-                <div>{{ movie.Year}}</div>
-                <div>{{ movie.Poster}}</div>
+                <v-card>
+                    <v-img
+                        :src="movie.Poster"
+                        :alt="movie.Title"
+                    />
+                    <v-card-title>
+                        {{ movie.Title }}
+                    </v-card-title>
+                    <v-card-subtitle>
+                        {{ movie.Year }}
+                    </v-card-subtitle>
+                </v-card>
             </v-col>
         </v-row>
 </template>
