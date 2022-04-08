@@ -23,7 +23,7 @@ export default {
         loading: true,
       })
       const res = await axios.get(
-        `http://www.omdbapi.com/?apikey=cbed7158&s=${state.title}&page=1`
+        `https://www.omdbapi.com/?apikey=cbed7158&s=${state.title}&page=1`
       )
       const pageLength = Math.ceil(res.data.totalResults / 10)
       commit("updateState", {
@@ -34,7 +34,7 @@ export default {
         for(let i = 2; i <= pageLength; i += 1) {
             if(i > 4) break
             const resMore = await axios.get(
-                `http://www.omdbapi.com/?apikey=cbed7158&s=${state.title}&page=${i}`)
+                `https://www.omdbapi.com/?apikey=cbed7158&s=${state.title}&page=${i}`)
             commit('pushIntoMovies', resMore.data.Search)
         }
       }
