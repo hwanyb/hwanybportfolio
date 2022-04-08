@@ -1,24 +1,6 @@
 # vue-movie-app
 
-## Project setup
-```
-npm install
-```
+## 패스트캠퍼스 Vue.js 압축 완성 올인원 패키지 강의
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 데모사이트
+#### https://vue-movie-app-17cdc.web.app/
